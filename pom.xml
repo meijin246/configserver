@@ -4,17 +4,18 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.person</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>configserver</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>demo</name>
+	<name>configserver</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.1.0.RELEASE</version>
+		<!--<version>2.1.0.RELEASE</version>-->
+		<version>1.5.21.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
@@ -22,7 +23,9 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<spring-cloud.version>Greenwich.M3</spring-cloud.version>
+		<!--<spring-cloud.version>Greenwich.M3</spring-cloud.version>-->
+		<!--<spring-cloud.version>Camden.SR6</spring-cloud.version>-->
+		<spring-cloud.version>Dalston.SR1</spring-cloud.version>
 	</properties>
 
 	<dependencies>
@@ -36,12 +39,19 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+<!--  -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka</artifactId>
 			<version>1.2.6.RELEASE</version>
 		</dependency>
 
+<!--
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-consul-discovery</artifactId>
+		</dependency>
+-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
